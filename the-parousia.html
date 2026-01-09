@@ -1,47 +1,79 @@
 <!doctype html>
-<html>
+<html lang="en">
 <head>
-<meta charset="utf-8"/>
-<title>The Parousia — Full Draft</title>
-<style>
-body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;line-height:1.7;margin:2rem;max-width:900px}
-nav{background:#f4f4f4;padding:1rem;border-radius:10px}
-nav a{margin-right:1rem}
-h1{margin-top:2.5rem}
-h2{margin-top:1.8rem}
-hr{margin:3rem 0}
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>The Parousia — Full Draft</title>
+  <style>
+:root{
+  --bg:#ffffff; --fg:#111; --muted:#444; --soft:#f4f4f4; --border:rgba(0,0,0,0.12); --link:#0b57d0;
+}
+@media (prefers-color-scheme: dark){
+  :root{ --bg:#0f1115; --fg:#f2f3f5; --muted:#c7c9d1; --soft:#151922; --border:rgba(255,255,255,0.12); --link:#7ab4ff; }
+}
+body{ margin:0; background:var(--bg); color:var(--fg); font-family: system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif; line-height:1.75; }
+.container{ max-width:900px; margin:0 auto; padding:28px 18px 64px; }
+header{ position:sticky; top:0; z-index:10; background: color-mix(in srgb, var(--bg) 92%, transparent); backdrop-filter: blur(10px); border-bottom:1px solid var(--border); }
+header .bar{ max-width:900px; margin:0 auto; padding:10px 18px; display:flex; gap:12px; align-items:center; justify-content:space-between; }
+header a{ color:var(--link); text-decoration:none; }
+header a:hover{ text-decoration:underline; }
+.badge{ font-size:0.9rem; color:var(--muted); }
+h1{ margin:2.2rem 0 0.7rem; font-size:1.9rem; line-height:1.2; }
+h2{ margin:1.6rem 0 0.5rem; font-size:1.25rem; }
+h3{ margin:1.2rem 0 0.4rem; font-size:1.05rem; }
+p{ margin:0.65rem 0; }
+a{ color:var(--link); }
+hr{ border:none; border-top:1px solid var(--border); margin:2.4rem 0; }
+.toc{ background:var(--soft); border:1px solid var(--border); border-radius:14px; padding:14px 16px; }
+.toc ul{ margin:0.4rem 0 0; padding-left:1.1rem; }
+.toc li{ margin:0.35rem 0; }
+.section{ scroll-margin-top:70px; }
+.footer{ margin-top:3rem; color:var(--muted); font-size:0.95rem; }
 </style>
 </head>
 <body>
-<nav>
-<strong>The Parousia</strong> — Full Draft<br/>
-<a href="#toc">Contents</a>
-</nav>
+<header>
+  <div class="bar">
+    <div>
+      <strong>The Parousia</strong>
+      <span class="badge">Draft</span>
+    </div>
+    <div style="display:flex; gap:14px; align-items:center;">
+      <a href="#toc">Contents</a>
+      <a href="/Bible/">FP Bible</a>
+      <a href="#top">Top</a>
+    </div>
+  </div>
+</header>
 
-<h1 id="toc">Contents</h1>
-<ul>
-<li><a href="#ch00">Chapter 0</a></li><li><a href="#ch00">Chapter 0</a></li><li><a href="#ch01">Chapter 1 — Why Waiting Feels Safer Than Fulfillment</a></li><li><a href="#ch02">Chapter 2 — What Fulfillment Actually Means (and Doesn’t)</a></li><li><a href="#ch03">Chapter 3 — Why Nearness Shaped Early Christian Faith</a></li><li><a href="#ch04">Chapter 4 — Why Jesus Spoke with Urgency</a></li><li><a href="#ch05">Chapter 5 — What “the End of the World” Meant</a></li><li><a href="#ch06">Chapter 6 — What Changed, What Didn’t</a></li><li><a href="#ch07">Chapter 7 — Living After Fulfillment</a></li><li><a href="#ch08">Chapter 8 — Reading Scripture After Fulfillment</a></li><li><a href="#ch09">Chapter 9 — Judgment After Fulfillment</a></li><li><a href="#ch10">Chapter 10 — Resurrection Reconsidered</a></li><li><a href="#ch11">Chapter 11 — Hope After Fulfillment</a></li><li><a href="#ch12">Chapter 12 — Continuity and Wisdom</a></li><li><a href="#ch999">Chapter 999</a></li>
+<div class="container">
+  <a id="top"></a>
+
+  <h1>The Parousia</h1>
+  <p class="badge">A modern re-examination of fulfilled eschatology, presence, and covenant transition.</p>
+  
+
+  <div class="toc" id="toc">
+    <strong>Contents</strong>
+    <ul>
+<li><a href="#ch01">Chapter 1 — Why Waiting Feels Safer Than Fulfillment</a></li>
+<li><a href="#ch02">Chapter 2 — What Fulfillment Actually Means (and Doesn’t)</a></li>
+<li><a href="#ch03">Chapter 3 — Why Nearness Shaped Early Christian Faith</a></li>
+<li><a href="#ch04">Chapter 4 — Why Jesus Spoke with Urgency</a></li>
+<li><a href="#ch05">Chapter 5 — What “the End of the World” Meant</a></li>
+<li><a href="#ch06">Chapter 6 — What Changed, What Didn’t</a></li>
+<li><a href="#ch07">Chapter 7 — Living After Fulfillment</a></li>
+<li><a href="#ch08">Chapter 8 — Reading Scripture After Fulfillment</a></li>
+<li><a href="#ch09">Chapter 9 — Judgment After Fulfillment</a></li>
+<li><a href="#ch10">Chapter 10 — Resurrection Reconsidered</a></li>
+<li><a href="#ch11">Chapter 11 — Hope After Fulfillment</a></li>
+<li><a href="#ch12">Chapter 12 — Continuity and Wisdom</a></li>
 </ul>
+  </div>
 
-<hr/>
+  <hr />
 
-<section id="ch00">
-<h1>Chapter X — [Working Title]</h1>
-<h2>Why this question matters</h2>
-<p>Briefly name the tension or question this chapter addresses. Write as if the reader is thoughtful but unsure.</p>
-<h2>What most of us were taught</h2>
-<p>Describe the common assumption honestly and fairly. No strawmen.</p>
-<h2>Where the tension shows up</h2>
-<p>Point out the verses, phrases, or experiences that don’t quite fit. Let the discomfort speak.</p>
-<h2>Why this matters more than we think</h2>
-<p>Slowly explain the implications without pushing conclusions.</p>
-<h2>A quieter way of looking at it</h2>
-<p>Introduce the fulfilled perspective gently, as an explanation—not a demand.</p>
-<h2>What to sit with before moving on</h2>
-<p>Leave the reader with space, not pressure.</p>
-</section><section id="ch00">
-<p>- Tone: calm, sharp, pastoral-analytic - No proof-text dumping - No AD 70 / timeline yet until later chapters - End chapters with open questions, not sermons</p>
-</section><section id="ch01">
+  <section class="section" id="ch01">
 <h1>Chapter 1 — Why Waiting Feels Safer Than Fulfillment</h1>
 <h2>Why this question matters</h2>
 <p>Most Christians have never rejected fulfilled eschatology because they examined it and found it wanting. They have rejected it because it feels destabilising.</p>
@@ -62,7 +94,7 @@ hr{margin:3rem 0}
 <p>This helps explain why fulfilled eschatology often provokes resistance out of proportion to its claims. The objection is rarely technical. It is rooted in the fear that faith might lose its forward pull, that hope might diminish, or that life with God might become ordinary.</p>
 <p>But this fear rests on an assumption worth questioning: that arrival ends the story rather than deepening it.</p>
 <p>This chapter does not attempt to resolve that tension. It names it. Before asking whether fulfillment is true, it is worth asking why its possibility feels so threatening—and why, despite repeated dismissal, the question continues to surface for thoughtful readers of Scripture.</p>
-</section><section id="ch02">
+</section><hr /><section class="section" id="ch02">
 <h1>Chapter 2 — What Fulfillment Actually Means (and Doesn’t)</h1>
 <h2>The problem with the word “fulfilled”</h2>
 <p>The word *fulfilled* often creates resistance before any argument is heard. For many readers, it sounds final, closed, even dismissive. In everyday usage, fulfillment implies completion in the sense of termination: a contract is fulfilled and set aside, an obligation fulfilled and no longer binding. When this meaning is imported into theology, fulfillment is instinctively heard as loss rather than clarity.</p>
@@ -127,7 +159,7 @@ hr{margin:3rem 0}
 <p>The next step is to ask why the earliest Christian writings speak with such confidence about nearness. Their language is not cautious or open-ended. Expectation is expressed as immediate, not abstract. This raises an important question: if fulfillment was not on the horizon for them, why did it shape their faith so thoroughly?</p>
 <p>To answer that, we must step into their world rather than project our assumptions onto it. We need to listen carefully to how time, hope, and divine action were understood within their historical and covenantal context. Only then can the language of imminence be heard on its own terms.</p>
 <p>This is where the discussion turns next—not to defend fulfillment, but to understand why nearness once felt normal, necessary, and uncontroversial. That exploration begins with the earliest Christian expectation of time.</p>
-</section><section id="ch03">
+</section><hr /><section class="section" id="ch03">
 <h1>Chapter 3 — Why Nearness Shaped Early Christian Faith</h1>
 <h2>Nearness as a shared assumption</h2>
 <p>When the earliest Christian writings are read without inherited delay assumptions, one feature stands out immediately: nearness is treated as normal. Expectation is not tentative or speculative. It is assumed, shared, and largely unquestioned.</p>
@@ -153,7 +185,7 @@ hr{margin:3rem 0}
 <p>If nearness shaped early Christian faith so thoroughly, then it must also shape how we hear the words of Jesus Himself. His language did not emerge in isolation. It resonated within a community already oriented toward imminent change.</p>
 <p>The next step, then, is to listen closely to Jesus’ own words—not to reinterpret them prematurely, but to hear their urgency as part of the same shared expectation. Understanding why nearness felt natural to the earliest believers prepares us to understand why Jesus spoke the way He did.</p>
 <p>That examination follows next.</p>
-</section><section id="ch04">
+</section><hr /><section class="section" id="ch04">
 <h1>Chapter 4 — Why Jesus Spoke with Urgency</h1>
 <h2>Urgency as a defining feature of Jesus’ teaching</h2>
 <p>Anyone reading the Gospels attentively encounters a striking feature of Jesus’ teaching: urgency. His words carry a sense of compression, of limited time, of decisions that cannot be deferred indefinitely. This urgency is not confined to a few isolated statements; it pervades His warnings, His promises, and His ethical demands.</p>
@@ -182,7 +214,7 @@ hr{margin:3rem 0}
 <p>Jesus did not speak in isolation. His urgency was heard, received, and echoed by His earliest followers. The language of nearness did not end with Him; it intensified within the communities that formed around His teaching.</p>
 <p>The next step, then, is to examine how Jesus’ urgency was taken up and expressed by those who followed Him. If His words were understood as immediately relevant, that understanding will be reflected in the way early Christians spoke about time, judgment, and expectation.</p>
 <p>That exploration follows next.</p>
-</section><section id="ch05">
+</section><hr /><section class="section" id="ch05">
 <h1>Chapter 5 — What “the End of the World” Meant</h1>
 <h2>The problem with the phrase itself</h2>
 <p>Few phrases have shaped Christian expectation more powerfully than “the end of the world.” For modern readers, the meaning feels obvious. It suggests the destruction of the physical universe, the collapse of the planet, or the termination of history itself. This assumption is so ingrained that it is rarely questioned.</p>
@@ -212,7 +244,7 @@ hr{margin:3rem 0}
 <p>If “the end of the world” refers to the termination of a covenantal age, the next question becomes unavoidable: which age was ending, and what marked its conclusion?</p>
 <p>To answer that, we must examine how Scripture itself identifies the transition point between old and new. That inquiry moves us from language to history—from meaning to event.</p>
 <p>That is where the discussion turns next.</p>
-</section><section id="ch06">
+</section><hr /><section class="section" id="ch06">
 <h1>Chapter 6 — What Changed, What Didn’t</h1>
 <h2>Why this distinction matters</h2>
 <p>One of the strongest objections to fulfilled eschatology is not textual but existential. If something truly ended, many assume that everything must have changed. Conversely, if much of life appears unchanged, they conclude that nothing significant could have happened.</p>
@@ -245,7 +277,7 @@ hr{margin:3rem 0}
 <p>Once we understand what changed and what did not, we are prepared to examine *how* and *when* those changes were historically expressed. The discussion can now move from conceptual distinction to concrete event.</p>
 <p>Only at that point does it become necessary to address the historical transition that marked the close of one covenantal world and the full emergence of another.</p>
 <p>That is where the discussion turns next.</p>
-</section><section id="ch07">
+</section><hr /><section class="section" id="ch07">
 <h1>Chapter 7 — Living After Fulfillment</h1>
 <h2>The question that always follows</h2>
 <p>Whenever fulfillment is seriously considered, one question inevitably follows: *How then should we live?* This question is not merely practical; it is revealing. It exposes what many have assumed faith was for.</p>
@@ -277,7 +309,7 @@ hr{margin:3rem 0}
 <p>Living after fulfillment raises questions that cannot be avoided: How does Scripture continue to function? How should judgment, resurrection, and hope be understood now? What does continuity with the past look like without being bound to it?</p>
 <p>These questions do not undermine fulfillment. They arise because fulfillment has been taken seriously.</p>
 <p>The next chapter turns to those implications—not to reopen the question of whether fulfillment occurred, but to explore how Scripture is read and lived once it is assumed.</p>
-</section><section id="ch08">
+</section><hr /><section class="section" id="ch08">
 <h1>Chapter 8 — Reading Scripture After Fulfillment</h1>
 <h2>The question beneath the question</h2>
 <p>Once fulfillment is taken seriously, a deeper concern often emerges: *What happens to Scripture itself?* If key eschatological expectations have already been realised, some fear that the Bible becomes a closed book—useful for history, but diminished in relevance.</p>
@@ -311,7 +343,7 @@ hr{margin:3rem 0}
 <p>With Scripture no longer treated as a map of postponed outcomes, it can be read as it was meant to be: a formative witness to God’s completed work and its continuing implications.</p>
 <p>The next step is to examine how specific doctrines—judgment, resurrection, hope—function within this fulfilled framework, without reverting to futurist assumptions.</p>
 <p>That is where the discussion turns next.</p>
-</section><section id="ch09">
+</section><hr /><section class="section" id="ch09">
 <h1>Chapter 9 — Judgment After Fulfillment</h1>
 <h2>Why judgment cannot be skipped</h2>
 <p>Any discussion of fulfillment that avoids judgment will feel incomplete. Judgment is not a peripheral theme in the teaching of Jesus or the writings of the apostles. It stands at the centre of their warnings, their urgency, and their calls to faithfulness. To remove judgment is to distort the message; to postpone it indefinitely is to misunderstand it.</p>
@@ -343,7 +375,7 @@ hr{margin:3rem 0}
 <p>Once judgment is understood as covenantal, near, and fulfilled in its appointed form, other doctrines must be reconsidered in the same light. Resurrection, hope, and continuity with the past all come into focus once judgment is no longer imagined as endlessly future.</p>
 <p>The next chapter turns to one of the most contested of these doctrines: resurrection—not as speculative afterlife theory, but as covenantal and historical claim.</p>
 <p>That is where the discussion moves next.</p>
-</section><section id="ch10">
+</section><hr /><section class="section" id="ch10">
 <h1>Chapter 10 — Resurrection Reconsidered</h1>
 <h2>Why resurrection must be addressed carefully</h2>
 <p>Few doctrines carry more emotional and theological weight than resurrection. It is often treated as the final proof that eschatology must remain future. If resurrection has not occurred in the way many expect, then fulfillment is assumed to be impossible.</p>
@@ -377,7 +409,7 @@ hr{margin:3rem 0}
 <p>If resurrection is covenantal, corporate, and operative, then hope itself must be reconsidered. What does it mean to hope after fulfillment? How is expectation sustained without postponement? How does faith look when its central claims are not suspended?</p>
 <p>The next chapter turns to hope—not as deferred resolution, but as grounded confidence within a fulfilled reality.</p>
 <p>That is where the discussion moves next.</p>
-</section><section id="ch11">
+</section><hr /><section class="section" id="ch11">
 <h1>Chapter 11 — Hope After Fulfillment</h1>
 <h2>Why hope needs redefinition</h2>
 <p>Hope is often assumed to depend on postponement. When fulfillment is taken seriously, many fear that hope must shrink or disappear. This fear reveals how closely hope has been tied to unresolved expectation rather than to confidence grounded in reality.</p>
@@ -404,7 +436,7 @@ hr{margin:3rem 0}
 <p>At this point, the major theological tensions have been addressed. Fulfillment, judgment, resurrection, and hope have been considered not as speculative endpoints, but as realities shaping life within history.</p>
 <p>What remains is not argument, but orientation. The final task is to reflect on how faith continues—how Scripture, memory, wisdom, and identity function when the central claims of the gospel are no longer postponed.</p>
 <p>That is where the book turns next.</p>
-</section><section id="ch12">
+</section><hr /><section class="section" id="ch12">
 <h1>Chapter 12 — Continuity and Wisdom</h1>
 <h2>Why continuity matters</h2>
 <p>Fulfillment often raises an unspoken concern: if something truly ended, what remains to guide faith? The fear is not that meaning disappears, but that continuity is lost—that faith becomes detached from its own history.</p>
@@ -430,9 +462,11 @@ hr{margin:3rem 0}
 <p>This book has not attempted to settle every question or resolve every tension. Its purpose has been more modest and more demanding: to reconsider how faith is framed once fulfillment is taken seriously.</p>
 <p>The story continues—not as anticipation deferred, but as life faithfully lived. Scripture continues to speak. Wisdom continues to grow. Faith continues to mature.</p>
 <p>The question that remains is no longer *what are we waiting for?* It is *how shall we live?*</p>
-</section><section id="ch999">
-<p>Chapter 01 — [[01 - Why Waiting Feels Safer]] Chapter 02 — [[02 - What Fulfillment Means]] Chapter 03 — [[03 - Why Nearness Was Normal]] Chapter 04 — [[04 - Audience, Covenant, and Idiom]] Chapter 05 — [[05 - End of a World]] Chapter 06 — [[06 - What Changed, What Didn’t]] Chapter 07 — [[07 - Living After Fulfillment]]</p>
 </section>
 
+  <div class="footer">
+    <p><a href="#top">Back to top</a></p>
+  </div>
+</div>
 </body>
 </html>
